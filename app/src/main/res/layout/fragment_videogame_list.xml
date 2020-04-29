@@ -18,8 +18,8 @@
         android:layout_centerInParent="true"
         android:contentDescription="TODO"
         android:scaleType="fitXY"
-        android:src="@drawable/witchking"
-         />
+        android:src="@drawable/ornstein"
+        />
 
     <Button
         android:id="@+id/button2"
