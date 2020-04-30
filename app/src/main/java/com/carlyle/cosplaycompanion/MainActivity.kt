@@ -100,7 +100,7 @@ class MainActivity : FragmentActivity() {
             }
             if(position == 2)
             {
-                return FeaturedListFragment()
+                return VideoGameListFragment()
             }
             if(position == 3)
             {
