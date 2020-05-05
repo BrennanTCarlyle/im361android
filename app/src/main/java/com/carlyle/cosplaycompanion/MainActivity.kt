@@ -43,33 +43,14 @@ class MainActivity : FragmentActivity() {
             if(position == 1)
             {
                 tab.text = "Movies"
-                tab.setIcon(R.drawable.ic_tag_faces_black_24dp)
+                tab.setIcon(R.drawable.ic_movies)
             }
             if(position == 2)
             {
                 tab.text = "Video Games"
-                tab.setIcon(R.drawable.ic_settings_black_24dp)
+                tab.setIcon(R.drawable.ic_videogames)
             }
-            if(position == 3)
-            {
-                tab.text = "Historical"
-                tab.setIcon(R.drawable.ic_settings_black_24dp)
-            }
-            if(position == 4)
-            {
-                tab.text = "Comics"
-                tab.setIcon(R.drawable.ic_settings_black_24dp)
-            }
-            if(position == 5)
-            {
-                tab.text = "Other"
-                tab.setIcon(R.drawable.ic_settings_black_24dp)
-            }
-            if(position == 6)
-            {
-                tab.text = "Props"
-                tab.setIcon(R.drawable.ic_settings_black_24dp)
-            }
+
             tab.icon?.setColorFilter(primaryColor, PorterDuff.Mode.SRC_ATOP)
         }.attach()
 
@@ -86,7 +67,7 @@ class MainActivity : FragmentActivity() {
     }
     private inner class MainActivityPagerAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity){
         override fun getItemCount(): Int{
-             return 7
+             return 3
         }
         override fun createFragment(position: Int): Fragment {
 
@@ -102,22 +83,7 @@ class MainActivity : FragmentActivity() {
             {
                 return VideoGameListFragment()
             }
-            if(position == 3)
-            {
-                return FeaturedListFragment()
-            }
-            if(position == 4)
-            {
-                return FeaturedListFragment()
-            }
-            if(position == 5)
-            {
-                return FeaturedListFragment()
-            }
-            if(position == 6)
-            {
-                return FeaturedListFragment()
-            }
+
             return FeaturedListFragment()
         }
     }
