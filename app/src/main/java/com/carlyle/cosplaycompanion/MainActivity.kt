@@ -37,7 +37,7 @@ class MainActivity : FragmentActivity() {
             if(position == 0)
             {
                 tab.text = "Featured"
-                tab.setIcon(R.drawable.ic_featured)
+                tab.setIcon(R.drawable.tab_featured)
 
             }
             if(position == 1)

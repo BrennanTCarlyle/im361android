@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/linearLayout"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_marginStart="24dp"
     android:layout_marginTop="24dp"
     android:layout_marginEnd="24dp"
     android:layout_marginBottom="24dp"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imageView"
@@ -19,29 +19,27 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="384dp"
-        android:layout_height="90dp"
+        android:layout_width="363dp"
+        android:layout_height="86dp"
         android:layout_margin="5dp"
         android:background="@drawable/round_button"
         android:padding="0dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:text="View Tutorial" />
+        android:text="View Tutorial"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="384dp"
-        android:layout_height="90dp"
+        android:layout_width="363dp"
+        android:layout_height="87dp"
         android:layout_margin="5dp"
         android:background="@drawable/round_button"
         android:padding="0dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:text="Purchase Template" />
-
-
-
-
+        android:text="Purchase Template"
+        android:textColor="#FFFFFF" />
 
 
 </LinearLayout>
