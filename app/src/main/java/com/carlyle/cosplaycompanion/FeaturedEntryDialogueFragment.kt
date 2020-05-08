@@ -20,12 +20,12 @@ class FeaturedEntryDialogueFragment : DialogFragment() {
         ) as LinearLayout
         builder.setView(dialogView)
 
-        builder.setPositiveButton("Okay") { dialog, position ->
+        builder.setPositiveButton("Okay") {  _, _ ->
             val entry = dialogView.findViewById<EditText>(R.id.editText)
             positiveCallback?.invoke(entry.text.toString())
         }
 
-        builder.setNegativeButton("Cancel") { dialog, position ->
+        builder.setNegativeButton("Cancel") {  _, _ ->
         }
         return builder.create()
 
